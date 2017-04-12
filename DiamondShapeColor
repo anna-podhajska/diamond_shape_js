@@ -1,0 +1,51 @@
+<html>
+
+<head> </head>
+
+
+<body>
+
+
+<script>
+
+
+
+function DiamondShape(maxStars) {
+
+  for(var stars = 0; stars <= maxStars; stars++) {
+    document.writeln('..'.repeat(maxStars - stars).fontcolor("blue")
+    + '**'.repeat(stars).fontcolor("#FF1400")
+    + "..".repeat(maxStars - stars).fontcolor("blue")
+    + '<br/>');
+  }
+}
+
+function DiamondShape2(maxStars) {
+
+  for(var stars = maxStars; stars <= maxStars; stars--) {
+    document.writeln("..".repeat(maxStars - stars).fontcolor("purple")
+    + "**".repeat(stars).fontcolor("orange")
+    + "..".repeat(maxStars - stars).fontcolor("purple")
+    + "<br/>");
+
+  }
+}
+
+function DiamondShape3(maxStars) {
+  DiamondShape(maxStars);
+  DiamondShape2(maxStars);
+}
+
+
+DiamondShape3(10);
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
