@@ -1,0 +1,40 @@
+<html>
+
+<head> </head>
+
+<body>
+
+<script>
+
+function DiamondShape(maxStars) {
+
+  for(var stars = 0; stars <= maxStars; stars++) {
+    document.writeln('.'.repeat(maxStars - stars) + '*'.repeat(stars) + ".".repeat(maxStars - stars) + '<br/>');
+  }
+}
+
+function DiamondShape2(maxStars) {
+
+  for(var stars = maxStars; stars <= maxStars; stars--) {
+    document.writeln(".".repeat(maxStars - stars) + "*".repeat(stars) + ".".repeat(maxStars - stars) + "<br/>");
+
+  }
+}
+
+function DiamondShape3(maxStars) {
+  DiamondShape(maxStars);
+  DiamondShape2(maxStars);
+}
+
+
+DiamondShape3(15);
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
