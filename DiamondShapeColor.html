@@ -1,10 +1,12 @@
 <html>
+
 <head> </head>
 <body>
 
 <script>
 
-function DiamondShape(maxStars) {
+
+function DiamondShape3(maxStars) {
 
   for(var stars = 0; stars <= maxStars; stars++) {
     document.writeln('..'.repeat(maxStars - stars).fontcolor("blue")
@@ -12,9 +14,6 @@ function DiamondShape(maxStars) {
     + "..".repeat(maxStars - stars).fontcolor("blue")
     + '<br/>');
   }
-}
-
-function DiamondShape2(maxStars) {
 
   for(var stars = maxStars; stars <= maxStars; stars--) {
     document.writeln("..".repeat(maxStars - stars).fontcolor("purple")
@@ -22,11 +21,7 @@ function DiamondShape2(maxStars) {
     + "..".repeat(maxStars - stars).fontcolor("purple")
     + "<br/>");
   }
-}
 
-function DiamondShape3(maxStars) {
-  DiamondShape(maxStars);
-  DiamondShape2(maxStars);
 }
 
 DiamondShape3(10);
